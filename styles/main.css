@@ -1,0 +1,91 @@
+body {
+  margin: 0; /* Remove a margem padrão do navegador */
+  background-color: #F08080;
+  font-family: Arial, sans-serif;
+  max-width: 1200px; /* Limita a largura máxima 1200px */
+  min-width: 300px; /* Define a largura mínima 300px, para garantir que o conteúdo não fique muito estreito */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente, com margem zero no topo e embaixo */
+  padding: 20px; /* Adiciona um espaço interno de 20px em todas as direções */
+  position: relative; /* Permite que elementos internos usem posicionamento relativo, com base nesse corpo */
+  min-height: 100vh; /* Garante que o corpo tenha pelo menos a altura da tela, se o conteúdo não for suficiente */
+  display: flex; /* Define o corpo como um contêiner flexível */
+  flex-direction: column; /* Organiza os elementos internos do corpo na direção vertical (coluna) */
+}
+
+a:link {
+  /* Links não visitados */
+  color: blue;
+}
+
+a:visited {
+  /* Links visitados */
+  color: purple;
+}
+
+a:hover {
+  /* Cursor ativo */
+  color: red;
+  text-decoration: underline;
+}
+
+a:active {
+  /* Links aivos */
+  color: green;
+}
+
+.menu-bota-tudao  {
+  /* Propriedades da classe .menu, mas agora dentro de .menu-bota-tudao */
+  background-color: #444;
+  /* Exemplo de propriedade */
+  padding: 15px 0; /* Tamanho vertical dos botões */
+  margin-top: 8rem; /* Define uma margem superior de 8x o tamanho da fonet, movendo pra baixo*/
+}
+
+.menu-container { /*Alinhamento dos itens contidos no menu*/
+  display: flex; /* Alinhamento horizontal */
+  transition: transform 0.3s ease; 
+  justify-content: center; /* Centraliza o menu */
+  transform: translateY(14px); /*Move a calsse dos botões no eixo y(horizontal)*/
+  gap: 10px; /* Espaçamento lateral dos botões */
+}
+
+.menu-itens a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px; /* Tamanho vertical dos botões */
+  background-color: #111111;
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.menu-itens:hover {
+  transform: scale(1.1); /* Aplica o zoom frontal suave */
+}
+
+.menu-img {
+  width: 40px; /* Largura do elemento como 40 pixels */
+  height: auto; /* Altura auto para manter a proporção da imagem */
+  border-radius: 5px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove qualquer decoração de texto, como sublinhado */
+  position: relative; /* Posiciona o elemento de forma relativa em relação à sua posição original */
+  top: -11px; /* Move o elemento para cima em -11px em relação à sua posição original */
+  display: inline-block; /* Exibe o elemento como um bloco em linha, permitindo ajustes como padding e margin */
+  background-color: none;
+  transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.menu-img:hover {
+  transform: scale(1.1); /* Aplica o zoom frontal suave */
+}
+
+.rodape {
+  padding: 14px 0; /* Espaçamento interno (superior e inferior) */
+  color: white;
+  background: #444;
+  text-align: center; /* Centraliza o texto do rodapé */
+  font-size: 80%; /* Fonte como 80% do tamanho padrão */
+  width: 100%; /* Define o uso de toda a largura disponível */
+  max-width: 1200px; /* Limita a largura do rodapé para 1200px */
+  margin: 0 auto; /* Centraliza o rodapé */
+  margin-top: auto; /* Coloca o rodapé na parte inferior */
+}
