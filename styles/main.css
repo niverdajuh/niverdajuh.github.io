@@ -33,13 +33,34 @@ a:active {
   color: green;
 }
 
-.menu-bota-tudao  {
-  /* Propriedades da classe .menu, mas agora dentro de .menu-bota-tudao */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-bottom: 10%;
   background-color: #444;
-  /* Exemplo de propriedade */
-  padding: 15px 0; /* Tamanho vertical dos botões */
-  margin-top: 8rem; /* Define uma margem superior de 8x o tamanho da fonet, movendo pra baixo*/
+  margin-inline: auto; /* Centraliza horizontalmente */
+  max-width: clamp(320px, 80%, 1200px); /* Adaptável ao tamanho da tela */
 }
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem; /* Menos padding em telas pequenas */
+  }
+}
+
+.menu {
+  position: fixed; /* Fixa o menu no topo */
+  top: 0; /* Alinha no topo */
+  width: 100%; /* Faz o menu ocupar toda a largura */
+  max-width: clamp(320px, 80%, 1200px); /* Igual ao rodapé */
+  background-color: #444; /* Cor do menu */
+  padding: 15px 0; /* Espaçamento vertical */
+  margin-inline: auto; /* Centraliza horizontalmente */
+  border-radius: 10px;
+}
+
 
 .menu-container { /*Alinhamento dos itens contidos no menu*/
   display: flex; /* Alinhamento horizontal */
@@ -79,13 +100,14 @@ a:active {
 }
 
 .rodape {
-  padding: 14px 0; /* Espaçamento interno (superior e inferior) */
+  padding: 2rem; /* Espaçamento interno (superior e inferior) */
   color: white;
   background: #444;
   text-align: center; /* Centraliza o texto do rodapé */
   font-size: 80%; /* Fonte como 80% do tamanho padrão */
   width: 100%; /* Define o uso de toda a largura disponível */
-  max-width: 1200px; /* Limita a largura do rodapé para 1200px */
-  margin: 0 auto; /* Centraliza o rodapé */
+  max-width: clamp(320px, 80%, 1200px); /* Adaptável ao tamanho da tela */
   margin-top: auto; /* Coloca o rodapé na parte inferior */
+  margin-inline: auto; /* Centraliza horizontalmente */
+  border-radius: 10px;
 }
