@@ -7,7 +7,7 @@ body {
    /* Centraliza o conteúdo horizontalmente, com margem zero no topo e embaixo */
   padding: 3px; /* Adiciona um espaço interno de 20px em todas as direções */
   position: relative; /* Permite que elementos internos usem posicionamento relativo, com base nesse corpo */
-  min-height: 50vh; /* Garante que o corpo tenha pelo menos a altura da tela, se o conteúdo não for suficiente */
+  min-height: 150vh; /* Garante que o corpo tenha pelo menos a altura da tela, se o conteúdo não for suficiente */
   display: flex; /* Define o corpo como um contêiner flexível */ /* Organiza os elementos internos do corpo na direção vertical (coluna) */
 }
 
