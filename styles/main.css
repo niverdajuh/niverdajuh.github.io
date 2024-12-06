@@ -3,7 +3,6 @@ body {
   font-family: Arial, sans-serif;
   font-size: 85%;
   margin-inline: auto; 
-
   max-width: clamp(320px, 80%, 1200px); /* Adaptável ao tamanho da tela *
    /* Centraliza o conteúdo horizontalmente, com margem zero no topo e embaixo */
   padding: 3px; /* Adiciona um espaço interno de 20px em todas as direções */
@@ -59,8 +58,6 @@ a:active {
   padding: 12px 5px; /* Espaçamento vertical */
   margin-inline: auto; /* Centraliza horizontalmente */
   border-radius: 10px;
-  
-  
 }
 
 .menu-container { /*Alinhamento dos itens contidos no menu*/
@@ -68,7 +65,7 @@ a:active {
   transition: transform 0.3s ease; 
   justify-content: center; /* Centraliza o menu */
   transform: translate(-2px, 15px); /*Move a calsse dos botões no eixo y(horizontal), x(vertical)*/
-  gap: 5px; /* Espaçamento lateral dos botões */
+  gap: 8px; /* Espaçamento lateral dos botões */
 }
 
 .menu-itens a {
@@ -106,9 +103,8 @@ a:active {
   bottom: px;
   background: #444;
   text-align: center; /* Centraliza o texto do rodapé */
-  max-width: clamp(320px, 82%, 1200px); /* Igual ao rodapé */
   font-size: 80%; /* Fonte como 80% do tamanho padrão */
-  width: 100%; /* Define o uso de toda a largura disponível */
+  width: 98%; /* Define o uso de toda a largura disponível */
   margin-top: auto; /* Coloca o rodapé na parte inferior */
   margin-inline: auto; /* Centraliza horizontalmente */
   border-radius: 10px;
