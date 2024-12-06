@@ -106,8 +106,9 @@ a:active {
   bottom: px;
   background: #444;
   text-align: center; /* Centraliza o texto do rodapé */
+  max-width: clamp(320px, 82%, 1200px); /* Igual ao rodapé */
   font-size: 80%; /* Fonte como 80% do tamanho padrão */
-  width: 98%; /* Define o uso de toda a largura disponível */
+  width: 100%; /* Define o uso de toda a largura disponível */
   margin-top: auto; /* Coloca o rodapé na parte inferior */
   margin-inline: auto; /* Centraliza horizontalmente */
   border-radius: 10px;
