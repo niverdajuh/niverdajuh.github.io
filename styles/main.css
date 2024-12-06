@@ -3,9 +3,9 @@ body {
   font-family: Arial, sans-serif;
   font-size: 85%;
   margin-inline: auto; 
-  max-width: 1200px; /* Limita a largura máxima 1200px */
-  min-width: 300px; /* Define a largura mínima 300px, para garantir que o conteúdo não fique muito estreito */
-  margin: 0 auto; /* Centraliza o conteúdo horizontalmente, com margem zero no topo e embaixo */
+
+  max-width: clamp(320px, 80%, 1200px); /* Adaptável ao tamanho da tela *
+   /* Centraliza o conteúdo horizontalmente, com margem zero no topo e embaixo */
   padding: 3px; /* Adiciona um espaço interno de 20px em todas as direções */
   position: relative; /* Permite que elementos internos usem posicionamento relativo, com base nesse corpo */
   min-height: 50vh; /* Garante que o corpo tenha pelo menos a altura da tela, se o conteúdo não for suficiente */
@@ -103,12 +103,11 @@ a:active {
 .rodape {
   padding: 1rem; /* Espaçamento interno (superior e inferior) */
   color: white;
-  bottom: 0px;
+  bottom: px;
   background: #444;
   text-align: center; /* Centraliza o texto do rodapé */
   font-size: 80%; /* Fonte como 80% do tamanho padrão */
-  width: 100%; /* Define o uso de toda a largura disponível */
-  max-width: clamp(320px, 80%, 1200px); /* Adaptável ao tamanho da tela */
+  width: 98%; /* Define o uso de toda a largura disponível */
   margin-top: auto; /* Coloca o rodapé na parte inferior */
   margin-inline: auto; /* Centraliza horizontalmente */
   border-radius: 10px;
