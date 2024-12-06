@@ -67,7 +67,7 @@ a:active {
   display: flex; /* Alinhamento horizontal */
   transition: transform 0.3s ease; 
   justify-content: center; /* Centraliza o menu */
-  transform: translate(-px, 15px); /*Move a calsse dos botões no eixo y(horizontal), x(vertical)*/
+  transform: translate(-2px, 15px); /*Move a calsse dos botões no eixo y(horizontal), x(vertical)*/
   gap: 5px; /* Espaçamento lateral dos botões */
 }
 
