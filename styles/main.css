@@ -72,7 +72,7 @@ a:active {
   text-decoration: none;
   color: white;
   padding: 10px 20px; /* Tamanho vertical dos botões */
-  background-color: #111111;
+  background-color: #2b2525;
   border-radius: 5px; /* Bordas arredondadas */
   transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
 }
@@ -82,12 +82,12 @@ a:active {
 }
 
 .menu-img {
-  width: 40px; /* Largura do elemento como 40 pixels */
+  width: 45px; /* Largura do elemento como 40 pixels */
   height: auto; /* Altura auto para manter a proporção da imagem */
   border-radius: 5px; /* Bordas arredondadas */
   text-decoration: none; /* Remove qualquer decoração de texto, como sublinhado */
   position: relative; /* Posiciona o elemento de forma relativa em relação à sua posição original */
-  top: -11px; /* Move o elemento para cima em -11px em relação à sua posição original */
+  top: -15px; /* Move o elemento para cima em -11px em relação à sua posição original */
   display: inline-block; /* Exibe o elemento como um bloco em linha, permitindo ajustes como padding e margin */
   background-color: none;
   transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
