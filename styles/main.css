@@ -32,16 +32,50 @@ a:active {
   color: green;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5%;
-  margin-bottom: 10%;
-  background-color: #444;
-  margin: 0 auto; /* Centraliza horizontalmente */
-  max-width: clamp(320px, 80%, 1200px);
+.bloco-page {
+  padding: 100px 16px; /* alinhamento da lista de nomes a esquerda*/
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  margin: 100px auto; /* Centraliza horizontalmente e move para baixo */
+  max-width: clamp(100%, 100%, 100%);
+  gap: 10px;
+  position: relative;
+  top: 3.5cap;
 }
 
+
+#jujuh {
+  text-align: center;
+}
+
+.jujuh-image {
+  max-width: 60%;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.link-container {
+  padding-right: -1cm; /* Ajuste conforme necessário */
+}
+
+#informacoes {
+  padding: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info-item i {
+  margin-right: 10px;
+  color: #4CAF50; /* Verde */
+}
+
+.info-item span {
+  font-weight: 600;
+}
 
 /* Ajustes para telas menores */
 @media (max-width: 768px) {
@@ -130,6 +164,11 @@ a:active {
 
 .check-box-no {
   accent-color: rgb(218, 21, 21);
+}
+
+.detalhes-festa {
+  font-family: Segoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
 }
 
 .presenca {
