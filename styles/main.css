@@ -2,13 +2,13 @@ body {
   background-color: #F08080;
   font-family: Arial, sans-serif;
   font-size: 85%;
-  margin-inline: auto; 
-  max-width: clamp(320px, 80%, 1200px); /* Adaptável ao tamanho da tela *
-   /* Centraliza o conteúdo horizontalmente, com margem zero no topo e embaixo */
-  padding: 3px; /* Adiciona um espaço interno de 20px em todas as direções */
-  position: relative; /* Permite que elementos internos usem posicionamento relativo, com base nesse corpo */
-  min-height: 150vh; /* Garante que o corpo tenha pelo menos a altura da tela, se o conteúdo não for suficiente */
-  display: flex; /* Define o corpo como um contêiner flexível */ /* Organiza os elementos internos do corpo na direção vertical (coluna) */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+  max-width: clamp(320px, 80%, 1200px);
+  padding: 3px; 
+  position: relative; 
+  min-height: 110vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a:link {
@@ -38,9 +38,10 @@ a:active {
   margin-top: 5%;
   margin-bottom: 10%;
   background-color: #444;
-  margin-inline: auto; /* Centraliza horizontalmente */
-  max-width: clamp(320px, 80%, 1200px); /* Adaptável ao tamanho da tela */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  max-width: clamp(320px, 80%, 1200px);
 }
+
 
 /* Ajustes para telas menores */
 @media (max-width: 768px) {
@@ -51,13 +52,14 @@ a:active {
 
 .menu {
   position: fixed; /* Fixa o menu no topo */
-  top: 0; /* Alinha no topo */
-  width: 100%; /* Faz o menu ocupar toda a largura */
-  max-width: clamp(320px, 82%, 1200px); /* Igual ao rodapé */
-  background-color: #444; /* Cor do menu */
-  padding: 12px 5px; /* Espaçamento vertical */
-  margin-inline: auto; /* Centraliza horizontalmente */
+  top: 0;
+  width: 100%;
+  max-width: clamp(320px, 82%, 1200px);
+  background-color: #444;
+  padding: 12px 5px;
+  margin: 0 auto; /* Centraliza horizontalmente */
   border-radius: 10px;
+  z-index: 10; /* Adicionei z-index para garantir que o menu fique em cima */
 }
 
 .menu-container { /*Alinhamento dos itens contidos no menu*/
@@ -95,6 +97,69 @@ a:active {
 
 .menu-img:hover {
   transform: scale(1.1); /* Aplica o zoom frontal suave */
+}
+
+#convites {
+  padding: 50px 100px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  margin-left: 200px;
+  margin-top: 65px;
+  /* margin: 100px 72px; umenta a margem superior */
+  max-width: 50%; /* Aumenta a largura */
+  /* justify-content: flex-start; (alinhamento à esquerda)*/
+  /* justify-content: center; (alinhamento ao centro)*/
+  /* justify-content: flex-end; /(alinhamento à direita);*/
+  position: relative;
+  top: 50px; /* Move o bloco pra baixo */
+}
+
+
+#lista-convidados {
+  padding: 50px;
+  list-style: circle;
+  position: relative;
+  column-count: 2; /* Define o número de colunas */
+  column-gap: 100px; /* Espaço entre as colunas */
+}
+
+#lista-convidados li {
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  margin-bottom: 10px;
+}
+
+.check-box-ok {
+  accent-color: rgb(28, 128, 28);
+}
+
+.check-box-no {
+  accent-color: rgb(218, 21, 21);
+}
+
+#lista-convidados input[type="checkbox"] {
+  margin-right: 10px; /* Espaçamento entre o checkbox e o rótulo */
+}
+
+#lista-convidados label {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 3000; /* Fonte normal (não negrito) */
+  font-size: 14px;
+}
+
+/* Estilo para checkboxes marcados */
+#lista-convidados {
+  padding: 20px;
+  list-style: circle;
+  column-count: 2;
+  column-gap: 20px;
+}
+
+#Confirmações {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 15;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .rodape {
