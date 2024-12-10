@@ -6,13 +6,16 @@ document.addEventListener('DOMContentLoaded', function() {
     function atualizarContador() {
       let count = 0;
       const checkboxes = listaConvidados.querySelectorAll('input[type="checkbox"]:checked');
-      count = checkboxes.length;
+      
+      checkboxes.forEach(checkbox => {
+        if (!checkbox.classList.contains('check-box-no')) {
+          count++;
+        }
+      });
+  
       confirmacoes.textContent = `Presenças confirmadas: ${count}`;
     }
   
-    // Adiciona o event listener para atualizar o contador ao mudar o estado dos checkboxes
     listaConvidados.addEventListener('change', atualizarContador);
-  
-    // Chama a função para atualizar o contador ao carregar a página
-    atualizarContador(); 
-});
+    atualizarContador();
+  });
