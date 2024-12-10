@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     const listaConvidados = document.getElementById('lista-convidados');
-    const confirmacoes = document.getElementById('Confirmações');
+    const confirmacoes = document.getElementById('Presenças confirmadas');
   
     // Função para atualizar o contador de confirmações
     function atualizarContador() {
       let count = 0;
       const checkboxes = listaConvidados.querySelectorAll('input[type="checkbox"]:checked');
       count = checkboxes.length;
-      confirmacoes.textContent = `Confirmações: ${count}`;
+      confirmacoes.textContent = `Presenças confirmadas: ${count}`;
     }
   
     // Adiciona o event listener para atualizar o contador ao mudar o estado dos checkboxes
