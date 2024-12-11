@@ -10,8 +10,10 @@ body {
     top: 45vmin;
 }	
 
-.message  h2{
-  font-size: 7vmin;
+.message  h4{
+    font-size: 16px;
+    font-weight: regular;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .meow-background {
@@ -920,9 +922,9 @@ height: 2.5vmin;
     border-radius: 10px;
     position: relative;
     width: 40vmin;
-    padding: 15px 40px;
+    padding: 10px 20px;
     color: #ffffff;   /* Cor do texto "voltar"*/
-    font-size: 25px;
+    font-size: 18px;
     vertical-align: middle;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;

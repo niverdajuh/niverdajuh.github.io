@@ -158,6 +158,41 @@ a:active {
   display: flexbox;
 }
 
+.img-thumbnail {
+  padding: 1px 13%;
+  max-width: 50%;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.bloco-page-img {
+  padding: 200px 16px; /* alinhamento da lista de nomes a esquerda*/
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  margin: 100px auto; /* Centraliza horizontalmente e move para baixo */
+  max-width: clamp(100%, 100%, 100%);
+  gap: 10px;
+  position: relative;
+  top: 3.5cap;
+}
+
+.fa-cloud-arrow-down {
+  color: #F08080;
+  padding: 12px 34%; 
+  font-size: 60px;
+  transition: transform 0.3s ease;
+}
+
+.txt-download {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+  padding: 0px 37%; 
+}
+
+.fa-cloud-arrow-down:hover {
+  transform: scale(1.5); /* Icon enlarges on hover */
+}
+
 .check-box-ok {
   accent-color: rgb(28, 128, 28);
 }
@@ -197,6 +232,11 @@ a:active {
   font-weight: bold;
   font-size: 10;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.alan-rodape a {
+  text-decoration: none;
+  color: #f3f3f3;
 }
 
 .rodape {
