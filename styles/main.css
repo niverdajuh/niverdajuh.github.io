@@ -1,145 +1,150 @@
+/* Estilos gerais do body */
 body {
-  background-color: #F08080;
-  font-family: Arial, sans-serif;
-  font-size: 85%;
+  background-color: #F08080; /* Cor de fundo */
+  font-family: Arial, sans-serif; /* Fonte padrão */
+  font-size: 85%; /* Tamanho da fonte */
   margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
-  max-width: clamp(320px, 82%, 100%);
-  padding: 3px; 
-  position: relative; 
-  min-height: 110vh;
-  display: flex;
-  flex-direction: column;
+  max-width: clamp(320px, 82%, 100%); /* Largura máxima */
+  padding: 3px; /* Espaçamento interno */
+  position: relative; /* Permite posicionamento relativo dos filhos */
 }
 
+/* Estilos para links */
 a:link {
-  /* Links não visitados */
-  color: blue;
+  color: blue; /* Links não visitados */
 }
 
 a:visited {
-  /* Links visitados */
-  color: purple;
+  color: purple; /* Links visitados */
 }
 
 a:hover {
-  /* Cursor ativo */
-  color: red;
+  color: red; /* Cursor ativo */
   text-decoration: underline;
 }
 
 a:active {
-  /* Links aivos */
-  color: green;
+  color: green; /* Links aivos */
 }
 
+/* Estilos para blocos de página */
 .bloco-page {
-  padding: 100px 16px; /* alinhamento da lista de nomes a esquerda*/
+  padding: 100px 16px;
   border-radius: 10px;
-  background-color: #f0f0f0;
-  margin: 100px auto; /* Centraliza horizontalmente e move para baixo */
+  background-color: #f0f0f0; /* Fundo do bloco */
+  margin: 100px auto;
   max-width: clamp(100%, 100%, 100%);
   gap: 10px;
   position: relative;
   top: 3.5cap;
 }
 
-
+/* Estilos para título */
 #jujuh {
   text-align: center;
 }
 
+/* Estilos para imagem principal */
 .jujuh-image {
   max-width: 60%;
   margin: 20px 0;
   border-radius: 10px;
 }
 
+/* Estilos para contêiner de links */
 .link-container {
-  padding-right: -1cm; /* Ajuste conforme necessário */
+  padding-right: -1cm;
 }
 
+/* Estilos para seção de informações */
 #informacoes {
-  padding: 20px;
+  padding: 35px;
+}
+
+.mario-maker-image {
+  max-width: 70%;
+  padding-top: 15%;
+  padding-left: 10%;
+  padding-bottom: 50%;
 }
 
 .info-item {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  padding: 10x 3%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  
 }
 
 .info-item i {
   margin-right: 10px;
-  color: #4CAF50; /* Verde */
+  color: #4CAF50;
 }
 
 .info-item span {
   font-weight: 600;
 }
 
-/* Ajustes para telas menores */
-@media (max-width: 768px) {
-  .container {
-    padding: 1rem; /* Menos padding em telas pequenas */
-  }
-}
-
+/* Estilos para menu fixo no topo */
 .menu {
-  position: fixed; /* Fixa o menu no topo */
-  top: 0; /* Posiciona o menu no topo */
-  width: 100%; /* Ocupa toda a largura da tela */
-  max-width: clamp(320px, 82%, 100%); /* Largura máxima */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: clamp(320px, 82%, 100%);
   background-color: #444;
-  padding: 12px 5px; /* Espaçamento interno */
+  padding: 12px 5px;
   border-radius: 10px;
-  z-index: 10; /* Mantém o menu em cima de outros elementos */
-  box-sizing: border-box; /* Inclui o padding na largura total */
-  margin:0; /* Remover margem */
+  z-index: 10;
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.menu-container { /*Alinhamento dos itens contidos no menu*/
-  display: flex; /* Alinhamento horizontal */
-  transition: transform 0.3s ease; 
-  justify-content: center; /* Centraliza o menu */
-  transform: translate(-2px, 15px); /*Move a calsse dos botões no eixo y(horizontal), x(vertical)*/
-  gap: 0.7%; /* Espaçamento lateral dos botões */
+.menu-container {
+  display: flex;
+  transition: transform 0.3s ease;
+  justify-content: center;
+  transform: translate(-2px, 15px);
+  gap: 0.7%;
 }
 
 .menu-itens a {
   text-decoration: none;
   color: white;
-  padding: 10px 20px; /* Tamanho vertical dos botões */
+  padding: 10px 20px;
   background-color: #2b2525;
-  border-radius: 5px; /* Bordas arredondadas */
-  transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
+  border-radius: 5px;
+  transition: transform 0.3s ease;
 }
 
 .menu-itens:hover {
-  transform: scale(1.1); /* Aplica o zoom frontal suave */
+  transform: scale(1.1);
 }
 
 .menu-img {
-  width: 43px; /* Largura do elemento como 40 pixels */
-  height: auto; /* Altura auto para manter a proporção da imagem */
-  border-radius: 5px; /* Bordas arredondadas */
-  text-decoration: none; /* Remove qualquer decoração de texto, como sublinhado */
-  position: relative; /* Posiciona o elemento de forma relativa em relação à sua posição original */
-  top: -15px; /* Move o elemento para cima em -11px em relação à sua posição original */
-  display: inline-block; /* Exibe o elemento como um bloco em linha, permitindo ajustes como padding e margin */
+  width: 43px;
+  height: auto;
+  border-radius: 5px;
+  text-decoration: none;
+  position: relative;
+  top: -15px;
+  /*display: inline-block;*/
   background-color: none;
-  transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
+  transition: transform 0.3s ease;
 }
 
 .menu-img:hover {
-  transform: scale(1.1); /* Aplica o zoom frontal suave */
+  transform: scale(1.1);
 }
 
+/* Estilos para bloco de convites */
 #convites {
-  padding: 8px 16px; /* alinhamento da lista de nomes a esquerda*/
+  padding: 8px 16px;
   border-radius: 10px;
   background-color: #f0f0f0;
-  margin: 55px auto; /* Centraliza horizontalmente e move para baixo */
-  max-width: 100%; /* Define a largura máxima para centralizar */
+  margin: 55px auto;
+  max-width: 100%;
   position: relative;
   top: 3.5cap;
 }
@@ -153,46 +158,192 @@ a:active {
 }
 
 #lista-convidados li {
-  width: 100%; /* ou use flex-basis: 48% */
+  width: 100%;
   padding-bottom: 5px;
   display: flexbox;
 }
 
-.img-thumbnail {
-  padding: 1px 13%;
-  max-width: 50%;
-  justify-content: space-between;
-  margin: 20px;
-}
-
+/* Estilos para blocos de página com imagem */
 .bloco-page-img {
-  padding: 200px 16px; /* alinhamento da lista de nomes a esquerda*/
+  /*padding: 200px 17px;?*/
   border-radius: 10px;
   background-color: #f0f0f0;
-  margin: 100px auto; /* Centraliza horizontalmente e move para baixo */
+  margin: 100px auto;
+  max-width: clamp(100%, 100%, 100%);
+  position: relative;
+  top: 3.5cap;
+}
+
+/* Estilos para blocos de página com imagem */
+.bloco-page-img-fotos {
+  /*padding: 200px 17px;?*/
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  margin: 100px auto;
+  max-width: clamp(100%, 100%, 100%);
+  position: relative;
+  top: 3.5cap;
+}
+
+/* Estilos para blocos de página com imagem */
+.bloco-page-img-sobre {
+  /*padding: 200px 17px;?*/
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  margin: 100px auto;
+  max-width: clamp(100%, 100%, 100%);
+  position: relative;
+  top: 3.5cap;
+}
+
+.titulo-pages {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.8rem;
+  padding-top: 10%;
+  padding-bottom: 50%;
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: bold;;
+  color: #000;
+  margin: 0;
+  }
+
+  .titulo-page-index {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    padding-right: 15%;
+    text-align: center;
+    font-weight: bold;;
+    color: #000;
+    margin: 0;
+    }
+
+
+  .titulo-download-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    padding-top: 10%;
+    padding-bottom: 50%;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bold;;
+    color: #000;
+    margin: 0;
+    }
+
+/* Estilos para títulos */
+.sobre-title {
+  padding: 200px 17px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  margin: 100px auto;
+  max-width: clamp(100%, 100%, 100%);
+  position: relative;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  padding: 12px 34%;
+  position: relative; 
+  
+}
+
+.bloco-page-img-sobre {
+  padding: 200px 17px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  margin: 100px auto;
   max-width: clamp(100%, 100%, 100%);
   gap: 10px;
   position: relative;
   top: 3.5cap;
 }
 
-.fa-cloud-arrow-down {
+/* Estilos para ícones de redes sociais */
+.socialicons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2px;
+    white-space: nowrap;
+    margin-top: 1rem;
+    padding: 12px 34%;
+    font-size: 60px;
+    position: relative; 
+}
+
+.social-icons i {
+    padding: 1px;
+    font-size: 1.5rem;
+}
+
+.fa-linkedin {
   color: #F08080;
-  padding: 12px 34%; 
-  font-size: 60px;
-  transition: transform 0.3s ease;
 }
 
-.txt-download {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: medium;
-  padding: 0px 37%; 
+.fa-envelope {
+  color: #F08080;
 }
 
-.fa-cloud-arrow-down:hover {
-  transform: scale(1.5); /* Icon enlarges on hover */
+.fa-github {
+  color: #F08080;
 }
 
+.fa-whatsapp {
+  color: #F08080;
+}
+
+.fa-instagram {
+  color: #F08080;
+}
+
+.fa-globe {
+  color: #F08080;
+}
+
+@keyframes custom-bounce { /* Movimento do botão de download */
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-35px); /* altura do pulo */
+  }
+  60% {
+     transform: translateY(-5px);
+  }
+}
+
+  .fa-cloud-arrow-down { /* Estilos bo botão de download */
+      color: #F08080;
+      animation: custom-bounce 1s ease-in-out infinite;
+      color: #F08080;
+      padding: 12px 34%;
+      font-size: 60px;
+      padding-bottom: 100%;
+      position: relative; 
+}
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+    .social-icons {
+        gap: 4px;
+    }
+
+    /* Estilo dos botões de rede social [AFETA APENAS MOBILE] */
+    .social-icons i {
+      padding-top: 5%;
+      font-size: 2rem;
+    }
+}
+
+/* Estilos para imagem thumbnail */
+.img-thumbnail {
+  padding: 1px 22%;
+  max-width: 30%;
+  margin: 28px;
+}
+
+
+/* Estilos para checkboxes */
 .check-box-ok {
   accent-color: rgb(28, 128, 28);
 }
@@ -201,30 +352,31 @@ a:active {
   accent-color: rgb(218, 21, 21);
 }
 
+/* Estilos para detalhes da festa */
 .detalhes-festa {
   font-family: Segoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
 }
 
+/* Estilos para presença */
 .presenca {
   font-family: Segoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
 }
 
+/* Estilos para lista de convidados */
 #lista-convidados input[type="checkbox"] {
-  margin-right: 10px; /* Espaçamento entre o checkbox e o rótulo */
+  margin-right: 10px;
 }
 
 #lista-convidados label {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 300; /* Fonte normal (não negrito) */
+  font-weight: 300;
   font-size: 12px;
 }
 
-/* Estilo para checkboxes marcados */
 #lista-convidados {
   line-height: 100%;
-
 }
 
 #Confirmações {
@@ -234,19 +386,20 @@ a:active {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Estilos para o rodapé */
 .alan-rodape a {
   text-decoration: none;
   color: #f3f3f3;
 }
 
 .rodape {
-  padding: 1rem; /* Espaçamento interno (superior e inferior) */
+  padding: 1rem;
   color: white;
   position: relative;
   background: #444;
-  text-align: center; /* Centraliza o texto do rodapé */
-  font-size: 80%; /* Fonte como 80% do tamanho padrão */
+  text-align: center;
+  font-size: 80%;
   max-width: clamp(320px, 100%, 100%);
-  margin-top: auto; /* Coloca o rodapé na parte inferior */
+  margin-top: auto;
   border-radius: 10px;
 }
