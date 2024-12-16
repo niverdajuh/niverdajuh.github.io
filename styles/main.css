@@ -312,14 +312,19 @@ a:active {
   }
 }
 
-  .fa-cloud-arrow-down { /* Estilos bo botão de download */
-      color: #F08080;
-      animation: custom-bounce 1s ease-in-out infinite;
-      color: #F08080;
-      padding: 12px 34%;
-      font-size: 60px;
-      padding-bottom: 100%;
-      position: relative; 
+.fa-cloud-arrow-down { 
+  color: #F08080 !important; /* Adicionado !important */
+  animation: custom-bounce 1s ease-in-out infinite;
+  padding: 12px 34%;
+  font-size: 60px;
+  position: relative; 
+  text-decoration: none;
+  padding: 12px 34%;
+}
+
+.fa-cloud-arrow-down:hover {
+  color: #F08080 !important; /* Adicionado !important */
+  text-decoration: none;
 }
 
 /* Media query para telas menores */
